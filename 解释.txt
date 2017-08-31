@@ -6,3 +6,168 @@ git remote add origin git@github.com:DATIEPUZI/picture.git
 git push -u origin master
 
 上传的文件中不能再有仓库，即不能包含.git文件
+
+rm file 删除本地文件
+git rm --cached -r file  删除远程文件夹
+git rm --cached test.txt 删除远程文件
+
+然后
+git commit -m "delete file"
+git push
+
+
+历史记录；
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git init
+Reinitialized existing Git repository in D:/Github_lib/picture/.git/
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git add AD
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git commit -m "picture"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+        1.txt
+
+nothing added to commit but untracked files present
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote rm origin
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote add origin https://github.com/DATIEPUZI/picture
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git add AD
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git?push?-u?origin?master
+bash: git?push?-u?origin?master: command not found
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/DATIEPUZI/picture/'
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$  git push -u origin master
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 170.33 KiB | 0 bytes/s, done.
+Total 16 (delta 0), reused 0 (delta 0)
+To https://github.com/DATIEPUZI/picture
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ rm 1.txt
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote -v
+origin  https://github.com/DATIEPUZI/picture (fetch)
+origin  https://github.com/DATIEPUZI/picture (push)
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote rm origin
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote add origin git@github.com:DATIEPUZI/picture.git
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ ssh-keygen -t rsa -C "1509603532@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/DATIEPUZI/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/DATIEPUZI/.ssh/id_rsa.
+Your public key has been saved in /c/Users/DATIEPUZI/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:5gKAaH04vUaTf1hkDe8HuRx64KNiW/DvuWzkZI7EpSs 1509603532@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|         +o      |
+|... o . o ...    |
+|o..+ *   o =     |
+|.  .+ + +.= +    |
+|    .+.oS= = .   |
+|    ..o*o+o .    |
+|     oo+X        |
+|    .E++o+.      |
+|     .. o*.      |
++----[SHA256]-----+
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git add 解释.txt
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git commit -m "上传的方法"
+[master bd438f8] 上传的方法
+ 1 file changed, 8 insertions(+)
+ create mode 100644 "\350\247\243\351\207\212.txt"
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote rm origin
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote add origin git@github.com:DATIEPUZI/picture.git
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '192.30.255.112' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote rm origin
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git remote add origin git@github.com:DATIEPUZI/picture.git
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:DATIEPUZI/picture.git
+   09e71ce..bd438f8  master -> master
+Branch master set up to track remote branch master from origin.
+
+DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
+$
