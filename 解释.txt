@@ -171,3 +171,7 @@ Branch master set up to track remote branch master from origin.
 
 DATIEPUZI@DESKTOP-L7LRNQT MINGW64 /d/Github_lib/picture (master)
 $
+
+
+GitHub用户名：DATIEPUZI
+      密码  ：小写 生日
